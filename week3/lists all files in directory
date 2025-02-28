@@ -1,0 +1,37 @@
+echo "enter the directory: "
+
+read dir
+
+for file in "$dir"/*; do
+        echo "$file"
+done
+
+----------------------------
+output:
+
+enter the directory: 
+/home/mca/
+/home/mca//abc.txt
+/home/mca//ctnt.txt
+/home/mca//Desktop
+/home/mca//Documents
+/home/mca//Downloads
+/home/mca//factfor.sh
+/home/mca//fact.sh
+/home/mca//file.sh
+/home/mca//jasna
+/home/mca//list.sh
+/home/mca//lists.sh
+/home/mca//meghna
+/home/mca//megh.sh
+/home/mca//mes
+/home/mca//mul.sh
+/home/mca//Music
+/home/mca//num.sh
+/home/mca//Pictures
+/home/mca//Public
+/home/mca//sumfor.sh
+/home/mca//sum.sh
+/home/mca//Templates
+/home/mca//Videos
+/home/mca//xyz.txt
