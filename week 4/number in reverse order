@@ -1,0 +1,15 @@
+echo "Enter the number:"
+read num
+reversed=""
+while [ $num -gt 0 ]
+do
+        digit=$((num  % 10))
+        reversed="$reversed$digit"
+        num=$((num /10))
+done
+echo "Reversed Number:$reversed"
+
+----output-----
+Enter the number:
+12345
+Reversed Number:54321
