@@ -1,0 +1,24 @@
+FILE="filetype.txt"
+file_type=$(file -b "$FILE")
+case "$file_type" in
+        *text*)
+                echo "This file is a text file"
+                ;;
+        *directory*)
+                echo "This file is a directory"
+                ;;
+        *executable*)
+                echo "this file is a executable"
+                ;;
+        *symlink*)
+                echo "This file is a symbolic link"
+                ;;
+        *)
+                echo "unknown filetype: $file_type"
+                ;;
+esac
+
+
+-----output-----
+
+This file is a directory
