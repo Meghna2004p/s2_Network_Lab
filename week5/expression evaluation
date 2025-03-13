@@ -1,0 +1,23 @@
+echo "Enter the value for a:"
+read a
+echo "Enter the value for b:"
+read b
+echo "Enter the value for c:"
+read c
+echo "Enter the value of d:"
+read d
+result=$(( a*20 - b*2 + c/d))
+echo "The result of the expression is :$result"
+
+
+---output---
+
+Enter the value for a:
+2
+Enter the value for b:
+4
+Enter the value for c:
+2
+Enter the value of d:
+3
+The result of the expression is :32
