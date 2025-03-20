@@ -1,0 +1,20 @@
+echo "enter file name: "
+read file
+
+if [ -s "$file" ]
+then
+        echo "$file is not empty"
+else
+        echo "$file is  empty"
+fi
+
+
+---output----
+
+enter file name: 
+home
+home is  empty
+
+enter file name: 
+Desktop
+Desktop is not empty
