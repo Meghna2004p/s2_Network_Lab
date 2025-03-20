@@ -1,0 +1,39 @@
+echo "enter file name: "
+read file
+
+if [ -r $file ]
+then
+        echo "$file has readable permission"
+else
+        echo "$file has no readable permission"
+fi
+
+if [ -w $file ]
+then
+        echo "$file has writable  permission"
+else
+        echo "$file has no writable  permission"
+fi
+
+if [ -x $file ]
+then
+        echo "$file has executable  permission"
+else
+        echo "$file has no executable permission"
+fi
+
+
+---output----
+
+enter file name: 
+home
+home has no readable permission
+home has no writable  permission
+home has no executable permission
+
+enter file name: 
+Desktop
+Desktop has readable permission
+Desktop has writable  permission
+Desktop has executable  permission
+
