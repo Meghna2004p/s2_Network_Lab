@@ -15,6 +15,5 @@ echo "All occurrences of '$old_word' have been replaced with '$new_word' in $fil
 
 -----output-----
 
-Usage: ./word.sh <file> <old_word> <new_word>
 [mca@localhost ~]$ ./word.sh abc.txt e s
 All occurrences of 'e' have been replaced with 's' in abc.txt.
